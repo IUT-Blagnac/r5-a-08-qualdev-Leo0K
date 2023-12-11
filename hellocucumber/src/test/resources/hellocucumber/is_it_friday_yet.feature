@@ -1,10 +1,3 @@
-Ce dépôt concerne les rendus de mailto:leonidas.kosmidis-teuschl@etu.univ-tlse2.fr[Leonidas Kosmidis].
-
-== TP1
-
-.Code
-[source,java]
----
 Feature: Is it Friday yet?
   Everybody wants to know when it's Friday
 
@@ -17,11 +10,3 @@ Feature: Is it Friday yet?
       | Friday         | TGIF   |
       | Sunday         | Nope   |
       | anything else! | Nope   |
----
-
-== Résultats des tests :
-
-.Tests success
-image::ressources/Tests.png[width=80%]
-
-== TP2...
