@@ -6,7 +6,7 @@ Feature: Cocktail Ordering
     Given <from> who wants to buy a drink
     When an order is declared for <to>
     Then there is <nbCocktails> cocktails in the order
-    
+
     Examples:
       | from  | to       | nbCocktails |
       | Romeo | Juliette |           0 |
