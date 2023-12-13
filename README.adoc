@@ -4,7 +4,7 @@ Ce dépôt concerne les rendus de mailto:leonidas.kosmidis-teuschl@etu.univ-tlse
 
 .Code
 [source,java]
----
+----
 Feature: Is it Friday yet?
   Everybody wants to know when it's Friday
 
@@ -17,7 +17,7 @@ Feature: Is it Friday yet?
       | Friday         | TGIF   |
       | Sunday         | Nope   |
       | anything else! | Nope   |
----
+----
 
 == Résultats des tests :
 
@@ -25,3 +25,37 @@ Feature: Is it Friday yet?
 image::ressources/Tests.png[width=80%]
 
 == TP2...
+
+.Code
+[source,java]
+----
+Feature: Cocktail Ordering
+
+  As Romeo, I want to offer a drink to Juliette so that we can discuss together (and maybe more).
+
+  Scenario Outline: Creating an empty order
+    Given <from> who wants to buy a drink
+    When an order is declared for <to>
+    Then there is <nbCocktails> cocktails in the order
+
+    Examples:
+      | from  | to       | nbCocktails |
+      | Romeo | Juliette |           0 |
+      | Tom   | Jerry    |           0 |
+
+  Scenario Outline: Sending a message with an order
+    Given <from> who wants to buy a drink
+    When an order is declared for <to>
+    And a message saying "<message>" is added
+    Then the ticket must say "<expected>"
+
+    Examples:
+      | from  | to       | message     | expected                                    |
+      | Romeo | Juliette | Wanna chat? | Message from Romeo to Juliette: Wanna chat? |
+      | Tom   | Jerry    | Hei!        | Message from Tom to Jerry: Hei!             |
+----
+
+== Résultats des tests :
+
+.Tests success TP2
+image::ressources/TestsV2.jpg[width=80%]
