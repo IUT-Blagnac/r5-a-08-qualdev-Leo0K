@@ -38,3 +38,4 @@ public class CocktailSteps {
     public void theTicketMustSay(String expectedMessage) {
         assertEquals(order.getTicketMessage(), expectedMessage);
     }
+}
