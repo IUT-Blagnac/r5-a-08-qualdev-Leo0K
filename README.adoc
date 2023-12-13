@@ -58,4 +58,4 @@ Feature: Cocktail Ordering
 == Résultats des tests :
 
 .Tests success TP2
-image::ressources/TestsV2.jpg[width=80%]
+image::ressources/TestsV2.0.png[width=80%]
