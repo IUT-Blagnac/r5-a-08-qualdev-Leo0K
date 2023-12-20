@@ -25,6 +25,8 @@ Feature: Is it Friday yet?
 .Tests success
 image::ressources/Tests.png[width=80%]
 
+include::hellocucumber/report0.txt[]
+
 == TP2
 
 .Code
@@ -60,6 +62,8 @@ Feature: Cocktail Ordering
 
 .Tests success TP2
 image::ressources/TestsV2.0.png[width=80%]
+
+include::cucumber_demo/report1.txt[]
 
 == TP3
 
@@ -150,3 +154,5 @@ Feature: Calculator operations
 
 .Tests success TP3
 image::ressources/TestsTP3.png[width=80%]
+
+include::tp3_demo/report.txt[]
